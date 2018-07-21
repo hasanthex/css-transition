@@ -14,7 +14,7 @@ some of transition timing functions are:
   8. cubic-bezier
   
 Browser support vendor prefixes are:
-  -webkit-transition : values;
-  -moz-transition : values;
-  -o-transition : values;
-  transition : values;
+  1. -webkit-transition : values;
+  2. -moz-transition : values;
+  3. -o-transition : values;
+  4. transition : values;
