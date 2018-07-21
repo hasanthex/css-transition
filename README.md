@@ -12,3 +12,9 @@ some of transition timing functions are:
   6. step-start
   7. step-end
   8. cubic-bezier
+  
+Browser support vendor prefixes are:
+  -webkit-transition : values;
+  -moz-transition : values;
+  -o-transition : values;
+  transition : values;
