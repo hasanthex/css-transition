@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Transition</title>
+</head>
+
+	<style type="text/css">
+		.style{
+		  font-size: 16px;
+		  background-color: #2db34a;
+		  width: 100px;
+		  width: 100px;
+		  padding: 30px;
+		  margin-bottom: 15px;
+		  text-align: center;
+		  display: inline-block;
+		}
+
+		/* General transition property */
+		.box-1{
+		  transition-property: background;
+		  transition-duration: 1s;
+		  transition-timing-function: linear;
+		}
+		.box-1:hover{
+		  background: red;
+		}
+
+		/* Use Multiple transition property */
+		.box-2{
+		  transition-property: background, border-radius;
+		  transition-duration: .5s;
+		  transition-timing-functiion: linear;
+		}
+
+		.box-2:hover{
+		  background: red;
+		  border-radius: 50%;
+		}
+
+
+		/* Use Multiple duration */
+		.box-3{
+		  transition-property: background, border-radius;
+		  transition-duration: .5s, 2s;
+		  transition-timing-functiion: linear;
+		}
+
+		.box-3:hover{
+		  background: red;
+		  border-radius: 50%;
+		}
+
+		/* Use delay property */
+		.box-4{
+		  transition-property: background, border-radius;
+		  transition-duration: .5s, 2s;
+		  transition-timing-functiion: linear;
+		  transition-delay: .5s, 3s;
+		}
+
+		.box-4:hover{
+		  background: red;
+		  border-radius: 50%;
+		}
+
+
+		/* Use ease-in timing function property */
+		.box-5{
+		  transition: width 2s  ease-in;
+		}
+
+		.box-5:hover{
+		  width: 400px;
+		}
+
+
+		/* Use ease-out timing function property */
+		.box-6{
+		  transition: width 2s  ease-out;
+		}
+		.box-6:hover{
+		  width: 400px;
+		}
+
+		/* Use ease-out timing function property */
+		.box-7{
+		  transition: width 2s  ease-in-out;
+		}
+		.box-7:hover{
+		  width: 400px;
+		}
+
+		/* Use cubic-bezier timing function property */
+		.box-8{
+		  transition: width 2s cubic-bezier(1, 0, 0, 1);
+		}
+		.box-8:hover{
+		  width: 400px;
+		}
+	</style>
+
+<body>
+	<div class="style box-1">General transition</div>
+	<div class="style box-2">Multiple property</div>
+	<div class="style box-3">Multiple duration</div>
+	<div class="style box-4">Delay property</div>
+	<br><div class="style box-5">Ease-in</div>
+	<br><div class="style box-6">Ease-out</div>
+	<br><div class="style box-7">ease-in-out</div>
+	<br><div class="style box-8">cubic-bezier</div>
+</body>
+</html>
